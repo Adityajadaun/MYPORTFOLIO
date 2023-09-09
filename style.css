@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Home Section  */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(10, 10, 64);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(153, 153, 226);
+}
+
+.left {
+    font-size: 1.8rem;
+}
+
+.right ul li {
+    font-size: 1.1rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #ef0808;
+    color: #fff;
+    padding: 10px  30px;
+    margin-right: 100px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.homeSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 95vh;
+}
+
+.homeSection>div {
+    width: 50%;
+}
+
+.leftSection {
+    font-size: 2.5rem;
+    margin: 100px;
+    margin-top: 80px;
+}
+
+h1 {
+    font-size: 4.5rem;
+    color: paleturquoise;
+}
+
+.rightSection {
+    margin: 20px;
+    margin-top: -20px;
+    width: 50%;
+    height: auto;
+}
+
+img {
+    width: 400px;
+    height: 600px;
+    border-radius: 50px;
+}
+
+.purple {
+    color: pink;
+}
+
+
+
+/* About Section */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#about h2 {
+    color: burlywood;
+    font-size: 3rem;
+    text-decoration: underline;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.aboutSection {
+    display: flex;
+    gap: 50px;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+
+/* Project Section */
+
+#project h2 {
+    color: lightskyblue;
+    font-size: 3.5rem;
+    text-decoration: underline;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.project_container {
+    margin: 50px;
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.grid_item {
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    margin-bottom: 15px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+}
+
+
+.card img {
+    height: 350px;
+    width: auto;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+.card:hover .card_content {
+    background: whitesmoke;
+    color: palevioletred;
+    transform: translateY(0px);
+}
+
+.card_content {
+    padding: 2rem;
+    position: relative;
+    top: -6.5rem;
+    margin-bottom: -6.5rem;
+    transition: 0.5s ease-in-out;
+    transform: translateY(100px);
+}
+
+.card_content h3 {
+    text-align: center;
+}
+
+/* Contact Section */
+
+#contact {
+    height: 70vh;
+}
+
+#contact h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 150px 0;
+    color: aquamarine;
+}
+
+#contact .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact_way {
+    margin: 20px;
+    gap: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_way i {
+    margin-right: 10px;
+    font-size: 3rem;
+}
+
+.contact_way h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.contact_way a {
+    display: flex;
+    text-decoration: none;
+    color: pink;
+}
+
+footer {
+    padding: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
